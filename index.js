@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const request = require('request')
+const axios = require('axios').default
 const app = express()
 const port = 3000
 
@@ -26,7 +26,7 @@ class Program {
 // This endpoint should consume https://cbc.ca/listen/api/v1/program-queue/1/:regionID
 // where regionID is one of the values of the select element
 // eg. https://cbc.ca/listen/api/v1/program-queue/1/toronto
-// The request libray is imported above to make this http call
+// The axios libray is imported above to make this http call
 app.get('/schedule/:regionID', (req, res) => {
 })
 
